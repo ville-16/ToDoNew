@@ -1,0 +1,102 @@
+<<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS_1</title>
+
+    <style type="text/css">
+
+        #elementROT {
+            background: red;
+        }
+
+        .element {
+            height: 50px;
+            width: 400px;
+        }
+
+        .elementBLAU {
+            background: lightblue;
+            width: 100px;
+        }
+
+        .elementGELB {
+            background: yellow;
+            width:300px;
+        }
+
+        .elementBLACK {
+            background: yellow;
+        }
+
+        #elementGRUEN {
+            background: lightgreen;
+        }
+
+
+        /* Lesson 2 */
+
+        p {
+            color: red;
+            font-weight: bold;
+        }
+
+        p ~p{
+            color: green;
+            font-weight: normal;
+            font-size:50px;
+        }
+
+        h2 {
+            color: hotpink;
+        }
+
+        h2+h2 {
+            color:deepskyblue;
+        }
+
+        /* First Level Selector */
+
+        li {
+            color: red;
+        }
+
+        ul li ul{
+            color: lightblue;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h2>Lesson 1</h2>
+    <div id="elementROT">ID Only</div>
+    <div class="element">Class Only</div>
+    <div class="element elementBLAU">Class & ID</div>
+    <div class="element elementGELB elementBLACK">Base Class and custom class</div>
+    <div id="elementGRUEN" class="element elementBLAU">ID & Class</div>
+
+    <h2>Lesson 2</h2>
+    <h2>Sublesson</h2>
+    <p>First paragraph</p>
+    <p>Second paragraph</p>
+    <p>Third paragraph</p>
+
+    <h2>First Level Selector</h2>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>
+            <ul>subItem 1</ul>
+            <ul>subItem 2</ul>
+            <ul>subItem 3</ul>
+        </li>
+    </ul>
+
+</body>
+</html>
